@@ -1,0 +1,303 @@
+@font-face {
+  font-family: ruhl-m;
+  src: url(./fonts/FrankRuhlLibre-Medium.ttf);
+}
+@font-face {
+  font-family: ruhl-regular;
+  src: url(./fonts/FrankRuhlLibre-Regular.ttf);
+}
+@font-face {
+  font-family: ruhl-vibes;
+  src: url(./fonts/GreatVibes-Regular.ttf);
+}
+nav{
+    display: flex;
+list-style: none;
+background-color: #f8f9fa;
+align-items: center;
+height: 10vh;
+justify-content: space-around;
+}
+a{
+    color: rgb(5, 5, 5);
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+ul{
+    display: flex;
+   justify-content: space-around;
+}
+nav ul{
+    flex:0.5 0.5 10rem;
+    justify-content: space-around;
+    display: flex;
+    
+}
+li{
+    list-style: none;
+}
+#logo {
+
+    font-family: ruhl-vibes, sans-serif;
+}
+
+.hero-introduction p{
+  color: rgb(124, 119, 119);
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+align-items: center;
+padding: 2rem;
+}
+.hero-introduction h2{
+  display: flex;
+  justify-content: center;
+align-items: center;
+padding: 20px;
+ }
+ .hero-introduction a{
+  text-decoration: none;
+  color: rgb(17, 17, 17);
+  
+  border-style:solid;
+  margin: 50%;
+  padding: 15px;
+  
+  }
+ div a{
+    border: 2px solid black;
+    padding: 10px;
+ }
+ .hero{
+  display: flex;
+  overflow: hidden;
+  min-height: 90vh;
+  margin: 0;
+}
+.hero-introduction{
+  flex: 2;
+}
+.hero-introduction h2 p{ 
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width:50%;
+  margin: 2rem;
+
+}
+ 
+  .plant1{
+    right: 60%;
+      z-index: -1;
+      animation:plantAnimation 2s infinite ease-in-out alternate;
+  }
+  .plant2{
+    left: 35%;
+      z-index: -1;
+      animation:plantAnimation 3.5s infinite ease-in-out alternate;
+  }
+  .plant{
+    position: absolute;
+   max-height: 80%;
+    bottom: 0px;
+  }
+  .hero-elena{
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .hero-images{
+   
+    position: relative;
+     background-color: rgb(209, 206, 206);
+  flex: 1;
+    z-index: 1;}
+
+  @keyframes plantAnimation {
+    from {
+      transform: translate(10%, -10%);
+    }
+    to {
+      transform: translate(0%, 0%);
+    }
+  }
+  
+     .about-text h2{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       font-family: ruhl-vibes ,sans-serif;
+       padding: 40px;
+     }
+    
+     div.about-text{
+      font-size: 30px;
+      color: aliceblue;
+  }
+  
+    section{
+      margin-left: auto;
+      margin-right: 40px;
+      margin-top: 150px;
+      margin-bottom: auto;
+    }
+     .about-image h5{
+      letter-spacing: .5rem;
+      font-size: 30px;
+      position: absolute;
+     padding: 8rem;
+     padding-right: 2rem;
+    }
+    .about-image img{
+      width:100%;
+      height: 100%;
+      object-fit: cover;
+    }
+   .about-text{
+     background-color: rgb(59, 59, 59);
+     padding: 20px;
+     
+   }
+    #about{
+      display: flex;
+      justify-content: space-between;
+      font-size: 25px;
+      margin: 0;
+    }
+   .about-life p{
+     color: aliceblue;
+     font-size: 20px;
+     font-family: RULh 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     
+     
+   }
+   .about-work p{
+    color: aliceblue;
+    font-size: 20px;
+    font-family: RULh 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  .about-contact p{
+    color: aliceblue;
+    font-size: 20px;
+    font-family: RULh 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  .about-life h3{
+    color: aliceblue;
+  }
+  .about-work h3{
+    color: aliceblue;
+  }
+  .about-contact h3{
+    color: aliceblue;
+  }
+  
+   .gallery{ 
+  display: grid;
+  
+   } 
+  .gallery1 {
+    grid-column: 1/ span 2;
+    grid-row: 1;
+  }
+  
+  .gallery2 {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+  }
+  
+  .gallery3 {
+    grid-column: 1 ;
+    grid-row: 2;
+  }
+ .gallery4{
+  grid-column: 2;
+  grid-row: 2;
+ }
+ .gallery img{
+   height: 100%;
+   width: 100%;
+ }
+ .contact {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+ margin: 0;
+ }
+.form-wrapper h2 span{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+
+li img {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 20px;
+  width: 20px;
+ 
+}
+.form-wrapper h2{
+  margin-left: 500px;
+  margin-right:auto;
+  margin-top: auto;
+  margin-bottom: auto; 
+  font-size: 35px;
+}
+.form-wrapper h2 span{
+ font-size: 70px;
+ color: rgb(189, 122, 252);
+}
+.form-wrapper form{
+  margin-left: 500px;
+  margin-right:auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+#email {
+  background-color:rgb(87, 85, 85);
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+}
+
+button{
+  background-color:rgb(189, 122, 252);
+  border: none;
+  color: white;
+  padding: 10px 92px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  
+}
+button:hover {
+  background-color: black;
+}
+footer h4{
+  color: aliceblue;
+ padding-left: 50px;
+ padding-right: 50%;
+ font-size: 16px;
+}
+footer{
+  display: flex;
+  align-items: center;
+  height: 10vh;
+  flex-wrap: wrap;
+  background-color: rgb(87, 85, 85);
+  margin: 0;
+}
+footer ul{
+  display: flex;
+  list-style: none;
+ flex: 2 2 10rem;
+}
